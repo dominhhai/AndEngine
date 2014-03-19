@@ -95,7 +95,15 @@ public class SoundManager extends BaseAudioManager<Sound> implements OnLoadCompl
 	// ===========================================================
 	// Methods
 	// ===========================================================
+	
+	public void onPause() {
+		this.mSoundPool.autoPause();
+	}
 
+	public void onResume() {
+		this.mSoundPool.autoResume();
+	}
+	
 	// ===========================================================
 	// Inner and Anonymous Classes
 	// ===========================================================
